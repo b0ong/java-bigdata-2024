@@ -17,10 +17,10 @@
     ```python
     #특수 숫자형
 
-binVal = 0b11111111 #225 (2진수)
-octVal = 0o11 #= 9 1~7 10(8) (8진수)
-hexVal = 0xFF #= 255 0~9ABCDEF (16진수)
-print('2진수', binVal, '8진수', octVal, '16진수', hexVal)
+      binVal = 0b11111111 #225 (2진수)
+      octVal = 0o11 #= 9 1~7 10(8) (8진수)
+      hexVal = 0xFF #= 255 0~9ABCDEF (16진수)
+      print('2진수', binVal, '8진수', octVal, '16진수', hexVal)
     ```
     - 문자열형(연산, 문자열 포맷)
     - 리스트형, 튜플형(연산, 함수)
