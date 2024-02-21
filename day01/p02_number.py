@@ -12,9 +12,9 @@ print('진수값은', highFloats)
 
 #특수 숫자형
 
-binVal = 0b11111111 #225 (컴터떄문에)
-octVal = 0o11 #= 9 1~7 10(8) (컴터떄문에)
-hexVal = 0xFF #= 255 0~9ABCDEF (컴터떄문에)
+binVal = 0b11111111 #225 (2진수)
+octVal = 0o11 #= 9 1~7 10(8) (8진수)
+hexVal = 0xFF #= 255 0~9ABCDEF (16진수)
 print('2진수', binVal, '8진수', octVal, '16진수', hexVal)
 
 #결론: 타입을 적을 필요가 없다.
