@@ -5,9 +5,7 @@
 - 파이썬 개발환경
   - [깃허브](https://github.com/) 가입
 
-  - 깃 설치
-
-  https://git-scm.com/
+  - [깃](https://git-scm.com/) 설치
 
   - 깃헙 데스크탑 설치
 
