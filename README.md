@@ -103,4 +103,6 @@
 
       - Windows App 만들기(PyQt 5)
 
+      ![QtApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdata01.png)
+
 ## 6일차
