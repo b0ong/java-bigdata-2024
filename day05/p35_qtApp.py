@@ -33,6 +33,6 @@ class qtApp(QWidget): # QWidget이 가지고 있는 속성,변수, 함수를 다
         paint.end()     # 반드시 닫아야 함
                        
 app = QApplication(sys.argv) 
-app.setWindowIcon(QIcon('./images/apple-logo.png'))
+app.setWindowIcon(QIcon('./images/apple-logo.png'))     # apple 정책상 보기 안좋다고 막아둠. 이렇게 해야함
 inst = qtApp() # 객체생성
 app.exec_() # 실행
