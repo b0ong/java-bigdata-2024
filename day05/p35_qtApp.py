@@ -22,7 +22,6 @@ class qtApp(QWidget): # QWidget이 가지고 있는 속성,변수, 함수를 다
     def initUI(self):
         self.setGeometry(300, 300, 800, 400) # 바탕화면 정해진 위치에 넓이와 높이로 그릴 설정
         self.setWindowTitle('첫번째 윈도우앱')
-        self.setWindowIcon(QIcon('./images/apple-logo.png'))
         self.show() # 윈도우를 보여주기 없으면 실행되지 않음.
         
     def paintEvent(self, event) -> None:
@@ -34,5 +33,6 @@ class qtApp(QWidget): # QWidget이 가지고 있는 속성,변수, 함수를 다
         paint.end()     # 반드시 닫아야 함
                        
 app = QApplication(sys.argv) 
+app.setWindowIcon(QIcon('./images/apple-logo.png'))
 inst = qtApp() # 객체생성
 app.exec_() # 실행
