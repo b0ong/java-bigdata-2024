@@ -17,9 +17,15 @@ class Contact: # 주소록 클래스
                f'주  소: {self.__addr}')
         return res
         
+def setConract(): # 사용자입력으로 주소록 받기
+    (name, phoneNumber, eMail, addr) = input('주소록 입력(이름, 핸드폰, 이메일, 주소[구분자 / ]) > )').split('/')
+    name = name.strip()
+    phoneNumber = phoneNumber.strip()
+    eMail = eMail.strip()
+    addr = addr.strip()
+    print(f'"{name}", "{phoneNumber}", "{eMail}" ,"{addr}"')
 def run():
-    first = Contact(name= '홍길동', phoneNumber= '010-9999-9999', eMail = 'hgd@naver.com', addr = '경성' )
-    print(first)
+    setConract()
 
 if __name__ == '__main__': # main 엔트리
     print('프로그램 시작')
