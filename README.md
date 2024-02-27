@@ -70,5 +70,7 @@
       - OS내 디렉토리 검색
       - 아스키 및 유니코드
       - 주소록 앱 만들기
+      
+      ![주소록앱](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdata01.gif)
 
 ## 6일차
