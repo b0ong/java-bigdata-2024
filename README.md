@@ -99,18 +99,18 @@
           return self.__name, self.__phoneNumber, self.__eMail, self.__addr
       ```
       
-      ![주소록앱](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdata01.gif)
+      ![주소록앱](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdate01.gif)
 
       - Windows App 만들기(PyQt 5)
 
-      ![QtApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdata01.png)
+      ![QtApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdate02.png)
 
 ## 6일차(2024.02.28)
   - 파이썬 학습
     - PyQt5 학습 이어서
      - QWidget 자식 클래스 종류 학습
 
-     ![QLabel](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdata03.png)
+     ![QLabel](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdate03.png)
 
      - Naver 뉴스API 검색 앱
-     ![naverApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdata04.png)
+     ![naverApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/5d439a6cd1d12fa2c361df9e53af8a03f57cfcb5/images/bigdate04.png)
