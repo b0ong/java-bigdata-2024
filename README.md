@@ -103,14 +103,14 @@
 
       - Windows App 만들기(PyQt 5)
 
-      ![QtApp](file:///Users/hangugjin/Documents/source/java-bigdata-2024/images/bigdate02.png)
+      ![QtApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate02.png)
 
 ## 6일차(2024.02.28)
   - 파이썬 학습
     - PyQt5 학습 이어서
      - QWidget 자식 클래스 종류 학습
 
-     ![QLabel](file:///Users/hangugjin/Documents/source/java-bigdata-2024/images/bigdate03.png)
+     ![QLabel](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate03.png)
 
      - Naver 뉴스API 검색 앱
-     ![naverApp](file:///Users/hangugjin/Documents/source/java-bigdata-2024/images/bigdate04.png)
+     ![naverApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate04.png)
