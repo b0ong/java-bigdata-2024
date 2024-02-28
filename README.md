@@ -99,7 +99,7 @@
           return self.__name, self.__phoneNumber, self.__eMail, self.__addr
       ```
       
-      ![주소록앱](file:///Users/hangugjin/Documents/source/java-bigdata-2024/images/bigdate01.gif)
+      ![주소록앱](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate01.gif)
 
       - Windows App 만들기(PyQt 5)
 
