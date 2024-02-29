@@ -114,4 +114,24 @@
 
      - Naver 뉴스API 검색 앱
      ![naverApp](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate04.png)
-    - 테스트
+    
+## 7일차
+  - 파이썬 학습
+    - PyQt5 계속
+      - Naver 뉴스 API 검색 앱 마무리
+    - json 학습
+    - PyQt5
+      - 스레드 개념, 학습
+      ![쓰레드](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate05.png)
+
+      - TTS
+
+      - QRCode 생성기
+      ![QR](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate07.png)
+
+      - 구글번역기앱
+      ![구글번역](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdate08.png)
+
+## 8일차
+  - 파이썬 학습
+    - 파이썬 자동화
