@@ -11,7 +11,7 @@ imgPath = 'java-bigdata-2024/day08/originalImage.png'
 im = Image.open(imgPath)
 im.show()
 
-#pt.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\tesseract.exe' # 테서렉트 설치경로 입력
+pt.pytesseract.tesseract_cmd = '/opt/homebrew/Cellar/tesseract/5.3.4_1/bin/tesseract' # 테서렉트 설치경로 입력
 text = pt.image_to_string(Image.open(imgPath), lang='kor')
 
 print(text)
