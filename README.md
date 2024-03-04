@@ -138,9 +138,21 @@
 
 ## 8일차
   - 파이썬 학습
-    - 파이썬 자동화
     - pyAutoGui 모듈(마우스, 키보드, 화면캡쳐)
     - 슬랙 webhook로 모바일 전송
 
     <!--![슬랙](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata08.jpeg) -->
+    <!-- html 태그로 이미지를 삽입하면 문제없음 -->
     <img src ="https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata08.jpeg" width="250" >
+
+    - Tesseract 프로그램으로 이미지에서 글자 추출 (인식률을 높이려면 직접 트레이닝을 해서 트레이닝 데이터를 만들어야함)
+
+    ![OCR](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata09.png)
+
+## 9일차
+  - 파이썬 응용
+    - 이미지 처리 OpenCV 
+    - 플라스크 웹서버 
+    - 그림에티터 만들기
+    - 메모장 만들기
+    - Jupyter Notebook(빅데이터 분석, 코딩 테스트)
