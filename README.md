@@ -141,4 +141,6 @@
     - 파이썬 자동화
     - pyAutoGui 모듈(마우스, 키보드, 화면캡쳐)
     - 슬랙 webhook로 모바일 전송
-    ![슬랙](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata08.jpeg)
+
+    <!--![슬랙](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata08.jpeg) -->
+    <img src ="https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata08.jpeg" width="250" >

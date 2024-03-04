@@ -23,7 +23,7 @@ def find_encoding_info(txt):
 
 imap = imaplib.IMAP4_SSL('imap.naver.com')
 id = 'rnrwls2482'
-pwd = 'i7M-CM5-iG'
+pwd = '***'
 res = imap.login(id, pwd)
 
 # print(res)
