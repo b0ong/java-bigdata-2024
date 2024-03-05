@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>new.png</file>
+    <file>exit.png</file>
+    <file>green.png</file>
+    <file>blue.png</file>
+    <file>red.png</file>
+    <file>about.png</file>
+    <file>save.png</file>
+    <file>open.png</file>
+  </qresource>
+</RCC>
