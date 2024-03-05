@@ -1,12 +1,13 @@
 <RCC>
-  <qresource prefix="icon">
-    <file>new.png</file>
-    <file>exit.png</file>
-    <file>green.png</file>
-    <file>blue.png</file>
-    <file>red.png</file>
-    <file>about.png</file>
-    <file>save.png</file>
-    <file>open.png</file>
+  <qresource prefix="newPrefix">
+    <file>imgs/editor.png</file>
+    <file>imgs/exit.png</file>
+    <file>imgs/green.png</file>
+    <file>imgs/new.png</file>
+    <file>imgs/open.png</file>
+    <file>imgs/red.png</file>
+    <file>imgs/save.png</file>
+    <file>imgs/blue.png</file>
+    <file>imgs/about.png</file>
   </qresource>
 </RCC>

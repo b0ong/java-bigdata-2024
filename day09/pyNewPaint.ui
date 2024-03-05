@@ -10,6 +10,12 @@
     <height>550</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -18,16 +24,10 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
-      <width>771</width>
-      <height>481</height>
+      <y>10</y>
+      <width>781</width>
+      <height>421</height>
      </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:white;</string>
@@ -43,17 +43,16 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>24</height>
+     <height>37</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_New">
+   <widget class="QMenu" name="menu_F">
     <property name="title">
-     <string>&amp;New</string>
+     <string>파일(&amp;F)</string>
     </property>
-    <addaction name="action_file"/>
-    <addaction name="action_Open"/>
-    <addaction name="action_Save"/>
-    <addaction name="action_S"/>
+    <addaction name="action_F"/>
+    <addaction name="action_0"/>
+    <addaction name="action_s"/>
    </widget>
    <widget class="QMenu" name="menu_T">
     <property name="title">
@@ -73,7 +72,6 @@
     <property name="title">
      <string>도움말(&amp;H)</string>
     </property>
-    <addaction name="action_H"/>
     <addaction name="action_A"/>
    </widget>
    <widget class="QMenu" name="menu">
@@ -81,7 +79,7 @@
      <string>여기까지 입력하세요</string>
     </property>
    </widget>
-   <addaction name="menu_New"/>
+   <addaction name="menu_F"/>
    <addaction name="menu_T"/>
    <addaction name="menu_H"/>
    <addaction name="menu"/>
@@ -97,9 +95,9 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="action_file"/>
-   <addaction name="action_Open"/>
-   <addaction name="action_Save"/>
+   <addaction name="action_F"/>
+   <addaction name="action_0"/>
+   <addaction name="action_s"/>
    <addaction name="separator"/>
    <addaction name="actionRED_R"/>
    <addaction name="actionGREEN_G"/>
@@ -107,55 +105,37 @@
    <addaction name="separator"/>
    <addaction name="action_A"/>
   </widget>
-  <action name="action_file">
+  <action name="action_F">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/new.png</normaloff>:/icon/new.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/new.png</normaloff>:/newPrefix/imgs/new.png</iconset>
    </property>
    <property name="text">
     <string>새그림(&amp;F)</string>
    </property>
   </action>
-  <action name="action_Open">
+  <action name="action_0">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/open.png</normaloff>:/icon/open.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/open.png</normaloff>:/newPrefix/imgs/open.png</iconset>
    </property>
    <property name="text">
-    <string>열기(&amp;O)</string>
+    <string>열기(&amp;0)</string>
    </property>
   </action>
-  <action name="action_Save">
+  <action name="action_s">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/save.png</normaloff>:/icon/save.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/save.png</normaloff>:/newPrefix/imgs/save.png</iconset>
    </property>
    <property name="text">
-    <string>저장(&amp;S)</string>
-   </property>
-  </action>
-  <action name="action_S">
-   <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/exit.png</normaloff>:/icon/exit.png</iconset>
-   </property>
-   <property name="text">
-    <string>종료(&amp;S)</string>
-   </property>
-  </action>
-  <action name="action_H">
-   <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/about.png</normaloff>:/icon/about.png</iconset>
-   </property>
-   <property name="text">
-    <string>더보기(&amp;H)</string>
+    <string>저장(&amp;s)</string>
    </property>
   </action>
   <action name="actionRED_R">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/red.png</normaloff>:/icon/red.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/red.png</normaloff>:/newPrefix/imgs/red.png</iconset>
    </property>
    <property name="text">
     <string>RED(&amp;R)</string>
@@ -163,8 +143,8 @@
   </action>
   <action name="actionGREEN_G">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/green.png</normaloff>:/icon/green.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/green.png</normaloff>:/newPrefix/imgs/green.png</iconset>
    </property>
    <property name="text">
     <string>GREEN(&amp;G)</string>
@@ -172,8 +152,8 @@
   </action>
   <action name="actionBLUE_B">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/blue.png</normaloff>:/icon/blue.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/blue.png</normaloff>:/newPrefix/imgs/blue.png</iconset>
    </property>
    <property name="text">
     <string>BLUE(&amp;B)</string>
@@ -181,16 +161,16 @@
   </action>
   <action name="action_A">
    <property name="icon">
-    <iconset resource="resourse.qrc/resourse.qrc">
-     <normaloff>:/icon/about.png</normaloff>:/icon/about.png</iconset>
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/imgs/about.png</normaloff>:/newPrefix/imgs/about.png</iconset>
    </property>
    <property name="text">
-    <string>이 프로그램은...(&amp;A)</string>
+    <string>이 프로그램은…(&amp;A)</string>
    </property>
   </action>
  </widget>
  <resources>
-  <include location="resourse.qrc/resourse.qrc"/>
+  <include location="resourse.qrc"/>
  </resources>
  <connections/>
 </ui>

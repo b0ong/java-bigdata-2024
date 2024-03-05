@@ -2,7 +2,7 @@
 # desc: PyQt 이미지 에디터
 '''
 qrc 파일을 사용하려면
-> pyrcc5 "resourse.qrc" -o "resoures_rc.py"
+> pyrcc5 "resources.qrc" -o "resources_rc.py"
 '''
 
 import sys
