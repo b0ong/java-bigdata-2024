@@ -154,7 +154,7 @@
 ## 9일차
   - 파이썬 응용
     - 이미지 처리 OpenCV 
-    ![얼굴인식](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata10.png)
+    ![얼굴인식](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata10.gif)
 
     - Flask, Django 웹서버
     - ![Flask](https://flask-docs-kr.readthedocs.io/ko/latest/index.html)
@@ -162,7 +162,7 @@
 
     - 그림에티터 만들기(with PyQt5)
 
-    ![editor](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata11.png)
+    ![editor](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata11.gif)
 
 ## 10일차
     - 메모장 만들기
