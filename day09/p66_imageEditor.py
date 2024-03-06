@@ -29,7 +29,7 @@ class WinApp(QMainWindow): #QWidget이 아님!!
         # uic.loadUi('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/pyNewPaint.ui',self)
         uic.loadUI('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/pyNerPaint.ui', self) # PyInstaller용 절대경로를 다 적어줘야함
         # self.setWindowIcon(QIcon('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/imgs/editor.png'))
-        self.setWindowIcon(QIcon'/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/editor.png') # PyInstaller용 절대경로를 다 적어줘야
+        self.setWindowIcon(QIcon('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/editor.png')) # PyInstaller용 절대경로를 다 적어줘야
         self.setWindowTitle('이미지에디터 v0.5')
         ## 이미지 추가/ 여러가지 UI에 대한 초기화
         # pixmap = QPixmap('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/tropical_beach.jpeg').scaledToHeight(471)
