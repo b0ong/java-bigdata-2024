@@ -3,6 +3,9 @@
 '''
 qrc 파일을 사용하려면
 > pyrcc5 "resources.qrc" -o "resources_rc.py"
+
+> imutils
+pip install imutils
 '''
 
 import sys
@@ -13,8 +16,8 @@ from PyQt5.QtGui import QCloseEvent, QMouseEvent
 from PyQt5.QtWidgets import *
 #리소스 파일 추가
 import resources_rc
-# OpenCV 추가
-import cv2
+# OpenCV, imutils 모듈추가
+import cv2, imutils
 
 class WinApp(QMainWindow): #QWidget이 아님!!
     def __init__(self) -> None:
@@ -23,11 +26,14 @@ class WinApp(QMainWindow): #QWidget이 아님!!
         self.initSignal()
 
     def initUI(self):
-        uic.loadUi('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/pyNewPaint.ui',self)
-        self.setWindowIcon(QIcon('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/imgs/editor.png'))
+        # uic.loadUi('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/pyNewPaint.ui',self)
+        uic.loadUI('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/pyNerPaint.ui', self) # PyInstaller용 절대경로를 다 적어줘야함
+        # self.setWindowIcon(QIcon('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/imgs/editor.png'))
+        self.setWindowIcon(QIcon'/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/editor.png') # PyInstaller용 절대경로를 다 적어줘야
         self.setWindowTitle('이미지에디터 v0.5')
         ## 이미지 추가/ 여러가지 UI에 대한 초기화
-        pixmap = QPixmap('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/tropical_beach.jpeg').scaledToHeight(471)
+        # pixmap = QPixmap('/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/tropical_beach.jpeg').scaledToHeight(471)
+        pixmap = QPixmap('tropucal_beach.jpeg').scaledToHeight(471)
         self.lblCanvas.setPixmap(pixmap)
         self.brushColor = Qt.Red # 빨간색이 기본
         ## UI초기화 끝
@@ -46,9 +52,22 @@ class WinApp(QMainWindow): #QWidget이 아님!!
         
         
     def actionNewClicked(self):
-        canvas = QPixmap(self.lblCanvas.width(), self.lblCanvas.height()) 
-        canvas.fill(QColor('white'))
-        self.lblCanvas.setPixmap(canvas)
+        # image = cv2.imread()
+        QMessageBox.about(self, '알림', '그레이 스케일로')
+        # temp.png 와 같은형태로 임시 이미지 저장
+        # openCV로 불러옴
+        # 그레이스케일로 변경한 다음
+        # 변경한 이미지를 다시 pixmap으로 변환 뒤 lblCanvas에 올림
+        tmpPath = '/Users/gukjinhan/Documents/GitHub/java-bigdata-2024/day09/temp.png'
+        pixmap = self.lblCanvas.pixmap() # 라벨에 있는 그림을 pixmap 변수에 저장
+        pixmap.save(tmpPath)
+        image = cv2.imread(tmpPath)
+        gray = cv2.cvtcolor(image, cv2.COLOR_BGR2GRAY)
+        # cv2.imshow('result', gray)
+        grayImg = QImage(gray, gray.shape[1], gray.shape[0], gray.strides[0], QImage.Format_Grayscale16)
+        self.lblCanvas.setPixmap(QPixmap.formImage(grayImg))
+        
+        
         
     def actionNewClicked(self):
         QMessageBox.about(self,'알림', '새그림')

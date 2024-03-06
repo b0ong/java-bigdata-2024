@@ -165,5 +165,16 @@
     ![editor](https://raw.githubusercontent.com/b0ong/java-bigdata-2024/main/images/bigdata11.gif)
 
 ## 10일차
-    - 메모장 만들기
-    - Jupyter Notebook(빅데이터 분석, 코딩 테스트)
+- 파이썬 응용
+  - 그림에디터 완성( OpenCV 그레이 스케일, 블러기능 추가)
+  - 실행파일 만들기
+    - PyInstaller 모듈 설치
+    ``` shell
+    > pip install pyinstaller
+    > pyinstaller -w -f pythonfile.py
+    ```
+    - -w는 윈도우창만 실행 콘솔창 삭제, -f _internal 폴더 생성안하도록, 진짜 onefile로 만들기
+    - 실패, 재생성시는 build, dist 폴더 삭제, pythonfile.spec 삭제 뒤 다시 명령어 실행
+    
+  - 메모장 만들기
+  - Jupyter Notebook(빅데이터 분석, 코딩 테스트)
